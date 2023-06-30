@@ -14,7 +14,7 @@
     <div class="media-content">
         <p class="title is-6">
             <!-- create img tag with src on url wordpress -->
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/icon-pin.png" class="inline-icon">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/document-microsoft.png" class="inline-icon">
             <a href="<?php the_permalink();?>"><?php the_title();?></a>
         </p>
     </div>
