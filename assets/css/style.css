@@ -9,6 +9,7 @@
     transform: rotate(359deg);
   }
 }
+
 .is-unselectable, .tabs, .pagination-previous,
 .pagination-next,
 .pagination-link,
@@ -1557,7 +1558,7 @@ a.box:active {
 }
 @media screen and (min-width: 1216px) {
   .container:not(.is-max-desktop) {
-    max-width: 1152px;
+    max-width: 960px;
   }
 }
 @media screen and (min-width: 1408px) {
@@ -10109,14 +10110,21 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
 }
 
 .hero-body {
+  background-image: url('../img/bg.jpg');
+  background-position: center;
+  background-size: cover;
+  min-height: 220px;
+  max-height: 350px;
   flex-grow: 1;
   flex-shrink: 0;
   padding: 3rem 1.5rem;
+  box-shadow: 0 2px 0 0 #fafafa;
 }
 
 .section {
   padding: 3rem 1.5rem;
 }
+
 @media screen and (min-width: 1024px) {
   .section.is-medium {
     padding: 9rem 1.5rem;
@@ -10126,9 +10134,57 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
   }
 }
 
+/* put in title image background and text align middle  */
+.page-header .title::before {
+  content: url('../img/icon-books.png');
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 10px; /* adjust as needed */
+}
+
+.inline-icon {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 10px; /* adjust as needed */
+  max-width: 20px;
+  margin-top: -5px;
+}
+/* 
+.media-content .title::before {
+  content: url('../img/icon-pin.png');
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 10px; 
+} */
+
 .footer {
-  background-color: #ECEFF4;
-  padding: 3rem 1.5rem 6rem;
+  background-color: #202426;
+  padding: 3rem 1.5rem 3rem;
+  color: #fff;
+}
+
+.footer .title {
+  color: #737373;
+}
+
+/* make traistion to hover */
+.footer .title {
+  transition: color 0.2s ease-out;
+}
+
+/* hover to title  */
+.footer .title:hover {
+  color: #fff;
+}
+
+.footer .subtitle {
+  color: #737373;
+}
+
+.footer hr {
+  background: #404040;
+  border: none;
+  height: 1px;
 }
 
 /* Need for Theme */
