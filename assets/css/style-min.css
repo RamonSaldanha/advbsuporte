@@ -1558,7 +1558,7 @@ a.box:active {
 }
 @media screen and (min-width: 1216px) {
   .container:not(.is-max-desktop) {
-    max-width: 1152px;
+    max-width: 960px;
   }
 }
 @media screen and (min-width: 1408px) {
@@ -10124,6 +10124,7 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
 .section {
   padding: 3rem 1.5rem;
 }
+
 @media screen and (min-width: 1024px) {
   .section.is-medium {
     padding: 9rem 1.5rem;
