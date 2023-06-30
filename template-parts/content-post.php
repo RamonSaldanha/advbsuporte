@@ -13,7 +13,12 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
     <header>
-		<?php the_title( '<h1 class="title is-spaced has-text-centered">', '</h1>' ); ?>
+		
+		<h1 class="title is-spaced has-text-centered">
+			<img src="<?php echo get_template_directory_uri(); ?>/assets/img/document-microsoft.png" style="max-width:38px;" class="inline-icon">
+			<?php the_title(); ?>
+		</h1>
+
 		<?php if ( has_excerpt() ): ?>
             <div class="subtitle"><?php the_excerpt(); ?></div>
 		<?php endif; ?>
